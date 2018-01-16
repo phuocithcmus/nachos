@@ -1,0 +1,36 @@
+/*------------------DO AN 1 - File Name: BubbleSort.c-----------------
+-	1512423 - Nguyen Duc Phuoc	 			     -
+-	1512421 - Dinh Huu Phuoc	 			     -
+-	1512433 - Nguyen Nhat Quang	 			     -
+---------------------------------------------------------------------*/
+#include "syscall.h"
+#include "copyright.h"
+int main()
+{
+	int n, i, j, tmp;
+	int arr[100];
+	PrintString("Nhap mang (n <=100):");
+	n = ReadInt();
+	for (i = 0; i < n; i++) {
+		PrintString("Phan tu thu ");
+		PrintChar(i + 1 + 48);
+		PrintChar('\n');
+		arr[i] = ReadInt();
+	} 
+	for (i = 0; i < n-1; i++) {
+		for (j = i+1; j < n; j++) {
+			if (arr[j] < arr[i])
+			{
+				tmp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = tmp;
+			}
+		}
+	}
+	PrintString("Mang sau khi sap xep: ");
+	for (i = 0; i < n; i++) {
+		PrintInt(arr[i]);
+		PrintChar(' ');
+	}
+	return 0;
+}

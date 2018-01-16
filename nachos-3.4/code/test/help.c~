@@ -1,0 +1,19 @@
+/*
+------------------DO AN 1-----------------
+-	1512423 - Nguyen Duc Phuoc	 -
+-	1512421 - Dinh Huu Phuoc	 -
+-	1512433 - Nguyen Nhat Quang	 -
+------------------------------------------
+*/#include "syscall.h"
+#include "copyright.h"
+
+int main(){
+	PrintString("--------Nhom Do An He Dieu Hanh--------\n");
+	PrintString("- MSSV: ");
+	PrintString("1512421 - Dinh Huu Phuoc\n");
+	PrintString("\t1512423 - Nguyen Duc Phuoc\n");
+	PrintString("\t1512433 - Nguyen Nhat Quang\n");
+	PrintString("- BubbleSort: Sap xep mot mang theo theo thuat toan sap xep bubblesort do nguoi dung nhap vao\n");
+	PrintString("- ASSCI: In ra bang ma ASSI\n");
+	return 0;
+}
